@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 12vh;
+    z-index: 10;
+    padding: 20px 50px;
+  color: rgb(125, 197, 245);
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    background:linear-gradient(#111,rgba(17, 17, 17, 0.103)) ;
+    &__logo{
+        font-family: 'Lobster', cursive;
+        font-weight: 400;
+        float: left;
+    }
+    &__profile{
+        float: right;
+        border-radius: 50%;
+        width: 40px;
+      
+    }
+
+    &__black{
+        background-color: black;
+        width: 100%;
+    }
+}
+@media (max-width:500px) {
+    .nav{
+        width: 100vw;
+    }
+}
